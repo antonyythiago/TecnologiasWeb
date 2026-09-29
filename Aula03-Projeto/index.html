@@ -19,14 +19,14 @@
         <li>   
             <a href="#eventos"> Eventos </a>
         </li>
-    <li>   
+        <li>    
+            <a href="#agenda"> Agenda do Evento</a>
+        </li>
+        <li>   
             <a href="#inscrições"> Inscrições</a>
         </li>
-    <li>   
-            <a href="sobre"> Sobre </a>
-        </li>
-        <li>    
-            <a href="agenda"> Agenda do Evento</a>
+        <li>   
+            <a href="#sobre"> Sobre </a>
         </li>
     </ul>
 
@@ -71,13 +71,13 @@
 
     </ol>
 
-    <h2> Agenda Completa </h2>
+    <h2 id="agenda"> Agenda Completa </h2>
 
     <table border="1">
 
         <caption>Eventos do Semestre 2026.2</caption>
 
-        <th> Programação
+        <th colspan="4"> Programação
 
         <tbody> 
 
@@ -88,49 +88,65 @@
                 <th scope="col">Local</th>
                 <th scope="col">Vagas</th>
             </tr>
-            <!-- Prmeira coluna -->
-                <tr> 
-                    <td> 10/10/26 </td>
-                </tr>
+            <tr>    
+                <td> 10/10/2026 </td>
+                <td> Semana da Computação 2026</td>
+                <td> Auditório </td>
+                <td> 120 </td>
+            </tr>
+            <tr>
+                <td> 24/10/2026 </td>
+                <td> Maratona de Computação IFBA </td>
+                <td> Laboratório 3 </td>
+                <td> 120 </td>
+            </tr>
+            <tr>    
+                <td> 07/11/2026 </td>
+                <td> Palestra: Introdução ao Desenvolvimento Web </td>
+                <td> Sala A14 </td>
+                <td> 120 </td>
+            </tr>
+    </table>            
 
-                <tr> 
-                    <td> 24/10/26 </td>
-                </tr>
-                
-                <tr> 
-                    <td> 07/11/26 </td>
-                </tr>
+     <h2 id="inscrições" >  Inscrições em Evento </h2></span>
+    
+    <form action="destino.html" method="post">
 
-            <!-- Segunda Coluna -->
-           <tr> 
-                    <td> Semana da Computação 2026 </td>
-                </tr>
+            <fieldset>
 
-                <tr> 
-                    <td> Maratona de Programação IFBA </td>
-                </tr>
-                
-                <tr> 
-                    <td> Palestra: Introdução ao Desenvolvimento Web </td>
-                </tr>
+            <legend> <b> Dados Pessoais </b> </legend>
+            
+            <label for="nome_id"> Nome Completo </label> 
+            <input type="text" id="nome_id" required placeholder="Digite seu nome completo:">
+<br><br>
+            <label for="email_id"> Email </label>
+            <input type="email" id="email_id" required placeholder="nome@aluno.ifba.edu.br">
+<br><br>
+            <label for="matricula_id"> Matrícula </label>
+            <input type="text" id="matricula_id" required placeholder="Digite sua matrícula:">
+<br><br>
+            <label for="data_id">Data de Nascimento</label>
+            <input type="date" id="data_id" required>
+            
+            </fieldset>
+            <fieldset> 
 
-            <!-- Terceira Coluna -->
+                <legend> <b>Dados da Inscrição </b> </legend>
+            
+            <label for="Evento_id">Evento</label>
+    <br>
+            <input type="checkbox" name="evento_selecionado" value="" id="Evento_id>
+    
+            <label for="Turno_id">Turno de preferência:</label>
+            <select name="Turno_id" id="Turno_id">
+                <option value="Matutino">Matutino</option>
+                <option value="Vespertino">Vespertino</option>
+                <option value="Noturno">Noturno</option>
+            </select>
+            
+            <label for=""></label>
 
-            <tr> 
-                    <td> Auditório Principal </td>
-                </tr>
-
-                <tr> 
-                    <td> Maratona de Programação IFBA </td>
-                </tr>
-                
-                <tr> 
-                    <td> Palestra: Introdução ao Desenvolvimento Web </td>
-                </tr>
-        </tbody>
-        
-
-    </table>
-
+            </fieldset>
+        </form>
 </body>
 </html>
