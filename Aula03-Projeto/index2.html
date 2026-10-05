@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Título e Subtítulo-->
+
+    <h1> <b> Sistema de Gestão de Eventos do IFBA </b> </h1>
+    <span> Campus Paulo Afonso -- Bacharelado em Ciência da Computação </h2>    
+<hr>
+
+        <!-- Listagem -->
+
+    <ul>
+        <li>   
+            <a href="#eventos"> Eventos </a>
+        </li>
+        <li>    
+            <a href="#agenda"> Agenda do Evento</a>
+        </li>
+        <li>   
+            <a href="#inscrições"> Inscrições</a>
+        </li>
+        <li>   
+            <a href="#sobre"> Sobre </a>
+        </li>
+    </ul>
+
+    <h2> Próximos Eventos </h2>
+
+    <img src="imagens/ifba.jpg" alt="Foto do IFBA Campus Paulo Afonso">
+<br>
+    <span> Auditório do IFBA Campus Paulo Afonso</span>
+
+    <h2 id="eventos">Eventos com inscrições abertas</h2> 
+
+    <ul>
+        <li>    
+            Semana da Computação 2026
+        </li>
+        <li>    
+            Maratona de Programação IFBA
+        </li>
+        <li>
+            Palestra: Introdução ao Desenvolvimento Web
+        </li>
+    </ul>
+
+    <h2>Ordem de apresentação dos trabalhos</h2> 
+
+    <ol type="1">    
+        <li>
+            Abertura e boas-vindas.
+        </li>
+        <li>
+            Aprensentação dos Projetos de Extensão.
+        </li>
+        <li>    
+            Intervalo.
+        </li>
+        <li>
+            Convidado palestrante.
+        </li>
+        <li>    
+            Encerramento.
+        </li>
+
+    </ol>
+
+    <h2 id="agenda"> Agenda Completa </h2>
+
+    <table border="1">
+
+        <caption>Eventos do Semestre 2026.2</caption>
+
+        <th colspan="4"> Programação
+
+        <tbody> 
+
+            <tr>
+
+                <th scope="col">Data</th>
+                <th scope="col">Evento</th>
+                <th scope="col">Local</th>
+                <th scope="col">Vagas</th>
+            </tr>
+            <tr>    
+                <td> 10/10/2026 </td>
+                <td> Semana da Computação 2026</td>
+                <td> Auditório </td>
+                <td> 120 </td>
+            </tr>
+            <tr>
+                <td> 24/10/2026 </td>
+                <td> Maratona de Computação IFBA </td>
+                <td> Laboratório 3 </td>
+                <td> 120 </td>
+            </tr>
+            <tr>    
+                <td> 07/11/2026 </td>
+                <td> Palestra: Introdução ao Desenvolvimento Web </td>
+                <td> Sala A14 </td>
+                <td> 120 </td>
+            </tr>
+    </table>            
+
+     <h2 id="inscrições" >  Inscrições em Evento </h2></span>
+
+    <form action="destino.html" method="post">
+
+            <fieldset>
+
+            <legend> <b> Dados Pessoais </b> </legend>
+
+            <label for="nome_id"> Nome Completo </label> 
+            <input type="text" id="nome_id" required placeholder="Digite seu nome completo:">
+<br><br>
+            <label for="email_id"> Email </label>
+            <input type="email" id="email_id" required placeholder="nome@aluno.ifba.edu.br">
+<br><br>
+            <label for="matricula_id"> Matrícula </label>
+            <input type="text" id="matricula_id" required placeholder="Digite sua matrícula:">
+<br><br>
+            <label for="data_id">Data de Nascimento</label>
+            <input type="date" id="data_id" required>
+
+            </fieldset>
+<fieldset>
+<legend>Dados da inscrição</legend>
+<br>
+
+<p>Selecione as programações que deseja participar:</p>
+
+<label style="display: block; margin-bottom: 5px;">
+<input type="checkbox" name="programacao1"> Maratona de Programação IFBA
+</label>
+
+<label style="display: block; margin-bottom: 5px;">
+<input type="checkbox" name="programacao2"> Palestra: Introdução ao Desenvolvimento
+</label>
+
+<label style="display: block; margin-bottom: 5px;">
+<input type="checkbox" name="programacao3"> Outras Atividades
+</label>
+
+<br><br>
+
+<label>Turno de preferência:</label><br>
+<input type="radio" id="matutino" name="turno" value="matutino">
+<label for="matutino">Matutino</label><br>
+
+<input type="radio" id="vespertino" name="turno" value="vespertino">
+<label for="vespertino">Vespertino</label><br>
+
+<input type="radio" id="noturno" name="turno" value="noturno">
+<label for="noturno">Noturno</label><br>
+<br>
+
+<label>Interesses:</label><br>
+<input type="checkbox" id="palestras" name="interesses" value="palestras">
+<label for="palestras">Palestras</label><br>
+
+<input type="checkbox" id="minicursos" name="interesses" value="minicursos">
+<label for="minicursos">Minicursos</label><br>
+
+<input type="checkbox" id="competicoes" name="interesses" value="competicoes">
+<label for="competicoes">Competições</label><br>
+<br>
+
+<label for="observacoes">Observações:</label><br>
+<textarea id="observacoes" name="observacoes" rows="4" cols="40" placeholder="Alguma observação sobre sua inscrição?"></textarea>
+<br><br>
+
+</fieldset>
+<br>
+
+<button type="submit">Confirmar inscrição</button>
+<button type="reset">Limpar formulário</button>
+
+</form>
+
+<hr>
+
+<h3 id="sobre">Sobre o projeto</h3>
+
+<p>
+O <strong>Sistema de Gestão de Eventos</strong> é o projeto integrador desenvolvido pelos alunos da disciplina de Tecnologias Web. Ele reúne, em um único site, a <em>divulgação</em> e a <em>inscrição</em> em eventos do Campus Paulo Afonso.
+</p>
+
+<blockquote>
+"Um site simples, feito só com HTML, CSS e JavaScript, pode resolver um problema real da comunidade acadêmica."
+</blockquote>
+
+<p>
+Para saber mais, acesse o <a href="https://github.com/antonyythiago" target="_blank">repositório do projeto</a> ou entre em contato pelo e-mail <u>eventos@ifba.edu.br</u>.
+</p>
+
+<br>
+
+<footer>
+<p>© 2026 IFBA -- Campus Paulo Afonso. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+
+
